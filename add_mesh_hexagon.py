@@ -44,11 +44,11 @@ def create_hex(subdivisions, radius, gen_uvs):
         uvs = []
 
     # Now let's generate the grid
-	# First we'll iterate through the Columns, starting from the bottom (fA)
+    # First we'll iterate through the Columns, starting from the bottom (fA)
     for itc in range(col_min, col_max + 1):
 
         # Calculate x for this row
-		# That's the same for each point in this column
+	# That's the same for each point in this column
         x = sin60 * rds * float(itc)
 
         # Calculate how many points (y values) we need to generate on for this column
@@ -64,7 +64,7 @@ def create_hex(subdivisions, radius, gen_uvs):
         # We need this for the indices
         current_num_points += np_col_i
 
-	    # Iterate through the Rows (fB)
+	# Iterate through the Rows (fB)
         for itr in range(row_min, row_max + 1):
             
             # Calculate y
