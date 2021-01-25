@@ -78,7 +78,7 @@ def create_hex(subdivisions, radius, gen_uvs):
                 uvs.append((uvx, uvy))
 
             # Indices
-			# From each point we'll try to create triangles left and right
+	    # From each point we'll try to create triangles left and right
             if (vertices_index < (current_num_points - 1)):
             
                 # Triangles left from this column
